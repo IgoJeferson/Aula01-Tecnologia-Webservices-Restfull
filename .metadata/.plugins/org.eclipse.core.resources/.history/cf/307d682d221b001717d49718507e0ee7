@@ -1,0 +1,16 @@
+package br.com.fiap.teste;
+
+import br.com.fiap.client.Aluno;
+
+public class TesteChamada {
+	
+	public static void main(String[] args) {
+		Aluno aluno = new Aluno();
+		aluno.setAprovado("COM CERTEZA");
+		aluno.setRm(89999L);
+		aluno.setNome("Jared Leto");
+	
+		
+	}
+
+}

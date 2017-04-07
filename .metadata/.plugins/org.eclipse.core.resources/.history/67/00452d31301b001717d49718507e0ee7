@@ -1,0 +1,22 @@
+package com.fiap.ws.exemplos;
+
+import java.io.FileOutputStream;
+
+import javax.jws.WebMethod;
+import javax.jws.WebService;
+
+@WebService
+public class Arquivo {
+
+	@WebMethod
+	public void upload(String nome, byte[] imageBytes){
+		String filePath = "C:/Temp/Upload/" + nome;
+		
+		new FileOutputStream(filePath);
+	}
+	
+	@WebMethod
+	public byte[] download(String fileName){
+		return new byte[]{};
+	}
+}

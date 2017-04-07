@@ -1,0 +1,9 @@
+package com.fiap.exemplo.ws;
+
+public class Aluno {
+	
+	private String nome;
+	private Long rm;
+	private String aprovado;
+
+}

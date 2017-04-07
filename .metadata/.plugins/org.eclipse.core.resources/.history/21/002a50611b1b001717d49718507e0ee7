@@ -1,0 +1,18 @@
+package com.fiap.exemplo.ws;
+
+import java.util.List;
+
+import javax.jws.WebMethod;
+import javax.jws.WebService;
+
+@WebService
+public class AlunoWeb {
+	
+	private List<Aluno> alunos;
+	
+	@WebMethod
+	public String ola(String nome){
+		return "Olá " + nome;
+	}
+
+}

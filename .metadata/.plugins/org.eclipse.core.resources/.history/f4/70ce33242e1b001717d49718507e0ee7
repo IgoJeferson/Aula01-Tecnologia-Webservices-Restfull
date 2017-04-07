@@ -1,0 +1,25 @@
+package br.com.fiap.teste;
+
+import java.util.List;
+
+import br.com.fiap.client.Aluno;
+import br.com.fiap.client.AlunoWeb2;
+import br.com.fiap.client.AlunoWeb2Service;
+import br.com.fiap.client.Listar;
+import br.com.fiap.client.ListarResponse;
+import br.com.fiap.client.Novo;
+
+public class TesteListar {
+	
+	public static void main(String[] args) {
+		
+		AlunoWeb2 port = new AlunoWeb2Service().getAlunoWeb2Port();
+		Listar requisicao = new Listar();
+		
+		ListarResponse response = port.listar(requisicao,  "igao", "1234");
+		List<Aluno> alunos = response.getReturn();
+		
+		System.out.println(port.novo(parametros, "igao", "1234").getReturn());
+	}
+
+}

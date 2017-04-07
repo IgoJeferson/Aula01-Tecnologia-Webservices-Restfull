@@ -1,0 +1,4 @@
+#GlassFish 3
+#Thu Apr 06 22:27:31 BRT 2017
+org.eclipse.jst.jee.server\:Arquivos=D\:\\glassfish4\\glassfish\\domains\\domain1\\eclipseApps\\Arquivos
+org.eclipse.jst.jee.server\:Aula2=D\:\\glassfish4\\glassfish\\domains\\domain1\\eclipseApps\\Aula2

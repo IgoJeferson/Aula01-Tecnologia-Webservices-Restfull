@@ -1,0 +1,12 @@
+package com.fiap.ws.exemplos;
+
+public class Arquivo {
+
+	public void upload(String nome, byte[] imageBytes){
+		
+	}
+	
+	public byte[] download(String fileName){
+		
+	}
+}
