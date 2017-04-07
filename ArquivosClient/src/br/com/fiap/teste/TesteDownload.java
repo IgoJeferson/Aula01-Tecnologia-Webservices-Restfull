@@ -1,0 +1,32 @@
+package br.com.fiap.teste;
+
+import java.io.BufferedOutputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+import br.com.fiap.client.Arquivo;
+import br.com.fiap.client.ArquivoService;
+
+public class TesteDownload {
+
+	public static void main(String[] args) {
+		
+		Arquivo port = new ArquivoService().getArquivoPort();
+		
+		String arquivo = "D:/Igao/teste.jpg";
+		byte[] fileBytes = port.download("imagem1.jpg");
+
+		try( FileOutputStream fos = new FileOutputStream(arquivo);
+			 BufferedOutputStream outputStream = new BufferedOutputStream(fos);){
+		
+			outputStream.write(fileBytes);
+		
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+	}
+}

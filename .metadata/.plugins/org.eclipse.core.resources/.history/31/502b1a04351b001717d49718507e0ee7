@@ -1,0 +1,13 @@
+package br.com.fiap.teste;
+
+import br.com.fiap.client.Arquivo;
+import br.com.fiap.client.ArquivoService;
+
+public class TesteDownload {
+
+	public static void main(String[] args) {
+		
+		Arquivo port = new ArquivoService().getArquivoPort();
+		
+	}
+}

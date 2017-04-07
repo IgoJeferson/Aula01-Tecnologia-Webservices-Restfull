@@ -1,0 +1,29 @@
+package br.com.fiap.teste;
+
+import java.io.BufferedOutputStream;
+import java.io.FileOutputStream;
+
+import br.com.fiap.client.Arquivo;
+import br.com.fiap.client.ArquivoService;
+
+public class TesteDownload {
+
+	public static void main(String[] args) {
+		
+		Arquivo port = new ArquivoService().getArquivoPort();
+		
+		String arquivo = "D:/Igao/teste.jpg";
+		byte[] fileBytes = port.download("C:/Temp/Download/ultra.jpg");
+
+		try( FileOutputStream fos = new FileOutputStream(filePath);
+		  BufferedOutputStream outputStream = new BufferedOutputStream(fos);){
+		
+		outputStream.write(imageBytes);
+		
+		catch (Exception e) {
+			e.printStackTrace(e);
+		}
+		
+		
+	}
+}
