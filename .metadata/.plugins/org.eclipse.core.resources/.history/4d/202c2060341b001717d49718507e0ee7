@@ -1,0 +1,16 @@
+package br.com.fiap.teste;
+
+import java.io.File;
+
+import br.com.fiap.client.Arquivo;
+import br.com.fiap.client.ArquivoService;
+
+public class TesteUpload {
+
+	public static void main(String[] args) {
+		
+		Arquivo port = new ArquivoService().getArquivoPort();
+		
+		new File("C:\Temp\Download\ultra.jps");
+	}
+}
